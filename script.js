@@ -4,7 +4,8 @@ async function getData() {
   try {
     let response = await fetch(api);
     let data = await response.json();
-    printData(data);
+     window.addEventListener("load", printData(data));
+    //printData(data);
   } catch (e) {
     console.log("Error:", e.massege);
   }
@@ -50,4 +51,4 @@ style="color: rgb(108, 104, 104); font-size: 20px; padding-top: 20px;">${data[0]
   }
 }
 
-window.addEventListener('load', (getData()));
+getData();
