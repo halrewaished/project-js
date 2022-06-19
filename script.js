@@ -50,4 +50,4 @@ style="color: rgb(108, 104, 104); font-size: 20px; padding-top: 20px;">${data[0]
   }
 }
 
-getData();
+window.addEventListener('load', (getData()));
